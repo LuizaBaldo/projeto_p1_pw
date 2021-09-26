@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel="stylesheet" href="pagina_login.css">
+    </head>
+    <body>
+        <div class="topo">            
+            <nav class="navbar navbar-light m-3" style="background-color: #1a6f3a;">                
+                <div class="container-fluid" id="topoConteainer">
+                    <img src="./logotrab.png" id="logoLogin" />
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn" type="submit" id="btnBuscar">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </form>
+                  <i class="far fa-user-circle" id="usuario" style="font-size: 48px;"></i>
+                </div>                
+            </nav>            
+        </div>
+        
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg navbar-dark m-3" style="background-color: #fecc68;">
+                <div class="container-fluid text-xs-center">
+                  <a class="navbar-brand" href="#">Menu</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" id="itensMenu">
+                      <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+                      <a class="nav-link active" aria-current="page" href="#">Pizzas Salgadas</a>
+                      <a class="nav-link active" aria-current="page" href="#">Calzones</a>
+                      <a class="nav-link active" aria-current="page" href="#">Pizzas Doces</a>
+                      <a class="nav-link active" aria-current="page" href="#">Bebidas</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+        <div class="container row" id="jaCadastroDiv">
+          <p class="display-6" id="jaCadastro">Já tenho cadastro</p>
+            <form method="post" class="needs-validation">
+                <div class="form-group" id="divEmail">
+                    <label for=txtEmailLogin>E-mail</label>
+                    <input type="email" class="form-control" id="txtEmailLogin" required />
+                </div>
+                <div class="form-group" id="divSenha">
+                    <label for="txtSenhaLogin">Senha</label>
+                    <input type="password" class="form-control" id="txtSenhaLogin" required />
+                </div>
+                <div class="form-group" id="divBotaoLogar">
+                    <button type="button" class="btn" id="btnLogar">Logar</button>
+                </div>
+            </form>
+            <a href="#" id="esqueciSenha">Esqueci minha senha</a>
+          </div>
+          <div class="container row" id="naoCadastroDiv">
+            <p class="display-6" id="naoCadastro">Ainda não tenho cadastro</p>
+            <div class="container row" id="btnCadastroDiv">
+              <button type="button" class="btn" id="btnNovoCadastro">
+                <a href="./pagina_cadastro.html" id="linkBtnCadastro">Cadastrar-se</a>
+              </button>
+            </div>
+          </div>
+    </body>
+</html>

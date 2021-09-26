@@ -1,0 +1,113 @@
+#esqueciSenha:hover{
+    color: #1a6f3a;
+    text-decoration: underline;
+}
+
+body{
+    background-color: #98112e;
+    color: white;
+}
+
+#topoContainer{
+    background-color: #1a6f3a;
+}
+
+#btnBuscar{
+    background-color: #fecc68;
+}
+
+i{
+    color: white;
+}
+
+#btnBuscar:hover{
+    background-color: #98112e;
+}
+
+#btnLogar{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    transition-duration: 0.3s;
+    background-color: #1a6f3a;
+    color: white;
+}
+
+#btnLogar:hover{
+    background-color: #fecc68;
+    color: #1a6f3a;
+}
+
+#btnNovoCadastro{
+    width: 60%;
+    height: 10vh;
+    margin-left: 22%;
+    margin-top: 10%;
+    background-color: #1a6f3a;
+    transition-duration: 0.3s;
+}
+
+#btnNovoCadastro:hover{
+    background-color: #fecc68;
+}
+
+#jaCadastroDiv, #naoCadastroDiv{
+    width: 50%;
+    float: left;
+}
+
+#jaCadastro, #naoCadastro{
+    text-align: center;
+    margin-top: 10%;
+}
+
+#divEmail, #divSenha{
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#esqueciSenha{
+    text-align: center;
+    color: #fecc68;
+    text-decoration: none;
+}
+
+#logoLogin{
+    width: 50px;
+    height: 50px;
+}
+
+#linkBtnCadastro{
+    color: white;
+    text-decoration: none;
+}
+
+#linkBtnCadastro:hover{
+    color: #1a6f3a;
+}
+
+@media only screen and (max-width: 660px) {
+    #jaCadastro, #naoCadastro{
+        margin-top: 5%;
+    }
+    
+    #jaCadastroDiv, #naoCadastroDiv{
+        width: 100%;
+    }
+
+    #btnNovoCadastro{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #usuario{
+        font-size: 10px;
+    }
+
+    #logo{
+        width: 38px;
+        height: 38px;
+    }
+}
